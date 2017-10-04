@@ -1,0 +1,16 @@
+<ion-view view-title="Lista de produtos">
+  <ion-content>
+    <ion-list>
+	  <ion-item ng-repeat="item in vm.items"
+	            class="item-thumbnail-left">
+
+	    <img ng-src="{{item.img}}">
+	    <h2>{{item.descricaoGondola}}</h2>
+
+	    <ion-option-button ng-click="vm.excluir($index)">
+	    	Apagar
+	    </ion-option-button>
+	  </ion-item>
+	</ion-list>
+  </ion-content>
+</ion-view>
